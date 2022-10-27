@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análisis Salarial en México</title>
+    <title>Calculadora de ISR e IVA</title>
+    <script src="./analisis.js"></script>
+    <link rel="stylesheet" href="analisis.css">
 </head>
 <body>
+    
+    <header>
+        <h1>
+            Calculadora de ISR en México conforme a las tarifas del 2022
+        </h1>
+    </header>
     <div class="main-container">
+        <div></div>
         <div class="main-card">
-            <!--¿Qué cantidad de ISR tendrás que pagar en 2022 conforme a tus ingresos?-->
-            <form name="formulario" action="">
-                <label for="ingresos">Ingresos Anuales: $</label>
-                <input type="number" id="ingresos" name="ingresos"><br>
-
-                <label for="deducibles">Deducibles: $</label>
-                <input type="number" id="deducibles" name="deducibles"><br>
-
-                <p class="texto-respuesta" id="texto-respuesta"></p>
-            </form>
+            <div class="isr-card">
+                <!--¿Qué cantidad de ISR tendrás que pagar en 2022 conforme a tus ingresos?-->
+                <form name="formulario" action="">
+                    <label for="ingresos">Ingresos Anuales: $</label>
+                    <input type="number" id="ingresos" class="input" name="ingresos"><br>
+    
+                    <label for="deducciones">Deducciones: $</label>
+                    <input type="number" id="deducciones" class="input" name="deducciones"><br>
+    
+                    <button type="button" onclick="calcular()">Calcular</button>
+                </form>
+                <p class="texto-respuesta" id="texto-respuesta">Impuesto determinado:</p>
+            </div>
+            <div class="iva-card">
+                <h6>Calculadora de IVA</h6>
+                <label for="cantidad"></label>
+                <input type="number" id="cantidad" class="input">
+                <p class="p-iva" id="p-iva">IVA del producto: </p>
+            </div>
         </div>
     </div>
 </body>

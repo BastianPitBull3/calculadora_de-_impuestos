@@ -1,0 +1,33 @@
+header{
+    text-align: center;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: auto 400px auto;
+    margin-left: 12px;
+}
+.main-card{
+    display: grid;
+    grid-template-rows: 150px 150px;
+    margin-top: 16px;
+    border: 2px solid grey;
+    justify-content: center;
+    height: 300px;
+}
+.isr-card{
+    display: inline-block;
+    padding: 8px 8px 0 8px;
+    margin: 16px 0 8px 0;
+    border: 1px solid red;
+    height: 120px;
+}
+.iva-card{
+    display: inline-block;
+    padding: 4px 8px 0 4px;
+    margin: 16px 0 8px 0;
+    border: 1px solid blue;
+    height: 70px;
+}
+.input{
+    width: 80px;
+}
