@@ -22,6 +22,9 @@
  *    3,898,140.13     |   EN ADELANTE       |   1,222,522.76 |   35.00                  |
  * --------------------------------------------------------------------------------------| 
  */
+
+/*Guardamos la información que necesitamos para calcular el ISR 
+  según el LÍMITE INFERIOR y el LÍMITE SUPERIOR                  */
 const limitesyTarifas = [
    {
       inf: 0.01,
@@ -91,11 +94,13 @@ const limitesyTarifas = [
    }
 ];
 
+//Función para calcular el ISR
 function calcularISR(){
    var ingresos = document.getElementById("ingresos").value;
    var deducciones = document.getElementById("deducciones").value;
    var utilidad = ingresos - deducciones;
 
+   //Determinamos los datos que vamos a utilizar
    for(var i = 0; i < limitesyTarifas.length; i++){
       if(utilidad < limitesyTarifas[i].sup && utilidad > limitesyTarifas[i].inf){
          var limiteInf = limitesyTarifas[i].inf;
@@ -122,6 +127,7 @@ function calcularISR(){
    return impuesto;
 }
 
+//Función para calcular el IVA de un producto
 function calcularIVA(){
    var precio = document.getElementById("precio").value;
    var iva = precio * 0.16;
