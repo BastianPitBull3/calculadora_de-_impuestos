@@ -1,5 +1,25 @@
 header{
     text-align: center;
+    background-color: rgb(83, 119, 185);
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: blanchedalmond;
+}
+body{
+    margin: 0;
+    background-color: floralwhite;
+    font-family: 'Quicksand', sans-serif;
+}
+hr{
+    width: 350px;
+    height: 2px;
+    background-color: gray;
+    margin-bottom: 0
+}
+p{
+    margin-top: 4px;
+    font-weight: bold;
 }
 .main-container{
     display: grid;
@@ -8,26 +28,53 @@ header{
 }
 .main-card{
     display: grid;
-    grid-template-rows: 150px 150px;
+    grid-template-rows: auto 30px auto;
     margin-top: 16px;
     border: 2px solid grey;
+    border-radius: 12px;
     justify-content: center;
-    height: 300px;
+    height: 350px;
+    background-color: white;
 }
 .isr-card{
     display: inline-block;
     padding: 8px 8px 0 8px;
-    margin: 16px 0 8px 0;
+    margin: 12px 0 4px 0;
     border: 1px solid red;
-    height: 120px;
+    border-radius: 8px;
+    height: 145px;
 }
 .iva-card{
     display: inline-block;
     padding: 4px 8px 0 4px;
-    margin: 16px 0 8px 0;
+    margin: 8px 0 4px 0;
     border: 1px solid blue;
-    height: 70px;
+    border-radius: 8px;
+    height: 120px;
+}
+.isr-card h1{
+    font-size: medium;
+    border: 1px solid black;
+    text-align: center;
+    margin: 8px 0 4px 0;
+}
+.isr-card form button{
+    margin: 8px 0 0 120px;
+}
+.iva-card h1{
+    font-size: medium;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 4px;
 }
 .input{
     width: 80px;
+}
+.button{
+    color: white;
+    font-weight: bold;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: forestgreen;
+    cursor: pointer;
 }

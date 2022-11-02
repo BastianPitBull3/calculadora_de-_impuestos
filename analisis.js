@@ -91,7 +91,7 @@ const limitesyTarifas = [
    }
 ];
 
-function calcular(){
+function calcularISR(){
    var ingresos = document.getElementById("ingresos").value;
    var deducciones = document.getElementById("deducciones").value;
    var utilidad = ingresos - deducciones;
@@ -120,5 +120,11 @@ function calcular(){
    console.log("impuesto: " + impuesto);
    document.getElementById("texto-respuesta").innerHTML = "Impuesto determinado: " + impuesto;
    return impuesto;
+}
 
+function calcularIVA(){
+   var precio = document.getElementById("precio").value;
+   var iva = precio * 0.16;
+   document.getElementById("p-iva").innerHTML = "IVA del producto: $" + iva;
+   return iva;
 }
