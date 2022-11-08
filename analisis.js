@@ -123,7 +123,7 @@ function calcularISR(){
    console.log("limite inferior: " + limiteInf);
    console.log("limite superior: " + limiteSup);
    console.log("impuesto: " + impuesto);
-   document.getElementById("texto-respuesta").innerHTML = "Impuesto determinado: " + impuesto;
+   document.getElementById("texto-respuesta").innerHTML = "Impuesto determinado: $" + impuesto;
    return impuesto;
 }
 
